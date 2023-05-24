@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Raleway:wght@300;500&display=swap');
+
+:root {
+    --cor-primaria: #F7F1E5;
+    --cor-secundaria: #4C4B16;
+    --cor-terciaria: #E7B10A;
+    --cor-quaternaria: #898121;
+    --cor-quintenaria: #FFD95A;
+
+    --fonte-primaria: 'Instrument Serif', serif;
+    --fonte-secundaria: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    /* box-sizing: border-box; */
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 30px;
+}
+
+.cabecalho {
+    padding: 1% 2% 1% 2%; /*top, right, bottom, left */
+    background-color: var(--cor-terciaria);
+    position: fixed;
+    right: 0%;
+    left: 0%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    font-weight: 500;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* background-color: var(--cor-terciaria); */
+    font-weight: 300;
+}
+
+.home {
+    background-color: var(--cor-terciaria);
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__home {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+}
+
+.apresentacao__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 96px;
+}
+
+.icones__texto {
+    display: flex;
+    gap: 10px
+}
+
+.imagens {
+    display: flex;
+    flex-direction: column;
+}
+
+.foto__ludmila {
+    width: 300px;
+    border-radius: 50%;
+    border: 7px solid var(--cor-quaternaria)
+}
+
+.container__icones {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+}
+
+.sobre__mim {
+    display: flex;
+    align-items: center;
+    padding: 10%;
+    gap: 20px;
+}
+
+.sobre__mim_texto {
+    /* padding: 5% 10% 5% 10%; */
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.apresentacao__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-size: 48px;
+}
+
+.foto__sobre_mim {
+    border: 7px solid var(--cor-quaternaria)
+}
+
+.rodape {
+    padding: 20px 0px 10px 0px;
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+    text-align: center;
+    font-size: 24px;
+}
+
+.link__escuro {
+    color: var(--cor-secundaria);
+}
+
+.link__claro {
+    color: var(--cor-primaria)
+}
+
+
+.item__menu {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    gap: 20px
+}
+
+.boxes {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    justify-content: center;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box__amarelo {
+    background-color: var(--cor-quintenaria);
+    width: 550px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--cor-secundaria);
+    font-weight: 300;
+}
+
+.box__verde {
+    background-color: var(--cor-quaternaria);
+    width: 550px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--cor-primaria);
+    font-weight: 300;
+}
+
+.texto {
+    text-align: center;
+    width: 550px;
+}
+
+@media (min-width: 480px) and (max-width: 1200px) 
