@@ -37,6 +37,7 @@ body {
     justify-content: center;
     gap: 80px;
     font-weight: 500;
+    list-style: none;
 }
 
 .apresentacao {
@@ -176,5 +177,3 @@ body {
     text-align: center;
     width: 550px;
 }
-
-@media (min-width: 480px) and (max-width: 1200px) 
