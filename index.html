@@ -7,54 +7,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto - Alura Include</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <ul>
-            <nav class="cabecalho__menu">
+        <nav class="menu">
+            <ul>
                 <li><a href="#sobre-mim">sobre mim</a></li>
                 <li><a href="#educacao">educação</a></li>
                 <li><a href="#experiencias">experiências</a></li>
                 <li><a href="#habilidades">habilidades</a></li>
                 <li><a href="#interesses">interesses</a></li>
-            </nav>
-        </ul>
-    </header>
-<main class="apresentacao">
-    <session class="home">
-        <div class="apresentacao__home">
-            <h1 class="apresentacao__titulo">Ludmila Silva Resende</h1>
-            <br>
-            <h2>Estudante</h2>
-            <br>
-                <div class="icones__texto">
-                    <img src="./assets/icons8-nova-mensagem-32.png" alt="Ícone de e-mail">
-                    <p>ludmila.silva.resende@gmail.com</p>
-                </div>
-                <div class="icones__texto">
-                    <img src="./assets/icons8-whatsapp-32.png" alt="Ícone de Whatsapp">
-                    <p>(62) 98487-7109</p>
-                </div>
-                <div class="icones__texto">
-                    <img src="./assets/icons8-local-32.png" alt="Ícone de localização">
-                    <p>Goiânia/GO - Brasil</p>
-                </div>
+             </ul>
+
+        <div class="menu_mobile_icon">
+            <button onclick="menuShow()"><img class="icon" src="./assets/icons8-cardápio.svg" alt="abre menu mobile">
+            </button>
         </div>
+          
+         </nav>
+
+        <div class="menu_mobile">
+            <ul>
+                    <li class="nav-item"><a href="#sobre-mim">sobre mim</a></li>
+                    <li class="nav-item"><a href="#educacao">educação</a></li>
+                    <li class="nav-item"><a href="#experiencias">experiências</a></li>
+                    <li class="nav-item"><a href="#habilidades">habilidades</a></li>
+                    <li class="nav-item"><a href="#interesses">interesses</a></li>
+        </div>
+    </header>
+
+    <section class="home">
+
+            <div class="informacoes-home">
+                <div>
+                    <h1>Ludmila Silva Resende</h1>
+                    <br>
+                    <h2>Estudante</h2>
+                </div>
+
+                <section class="contato">
+                    <div class="icones-texto">
+                        <img src="./assets/icons8-nova-mensagem-32.png" alt="Ícone de e-mail">
+                        <p>ludmila.silva.resende@gmail.com</p>
+                    </div>
+                    <div class="icones-texto">
+                        <img src="./assets/icons8-whatsapp-32.png" alt="Ícone de Whatsapp">
+                        <p>(62) 98487-7109</p>
+                    </div>
+                    <div class="icones-texto">
+                        <img src="./assets/icons8-local-32.png" alt="Ícone de localização">
+                        <p>Goiânia/GO - Brasil</p>
+                    </div> 
+                </section> 
+            </div>
+
             <div class="imagens">
                 <img class="foto__ludmila" src="./assets/imagem_perfil.jpg" alt="Foto de Ludmila">
-                <div class="container__icones">
-                    <a href="https://www.linkedin.com/in/ludmila-silva-resende" target="_blank">
-                        <img src="./assets/icons8-linkedin-50.png" width=75% alt="Link para LinkedIn de Ludmila" />
-                    </a>
-                    <a href="https://github.com/Lud-lud" target="_blank">
-                        <img src="./assets/icons8-github-50.png" alt="Link para GitHub de Ludmila" />
-                    </a>
-                </div>
+                    <div class="container__icones">
+                        <a href="https://www.linkedin.com/in/ludmila-silva-resende" target="_blank">
+                            <img src="./assets/icons8-linkedin-50.png" width=75% alt="Link para LinkedIn de Ludmila" />
+                        </a>
+                        <a href="https://github.com/Lud-lud" target="_blank">
+                            <img src="./assets/icons8-github-50.png" alt="Link para GitHub de Ludmila" />
+                        </a>
+                    </div>
             </div>
-    </session>
 
-    <session class="sobre__mim" id="sobre-mim">
+    </section>
+
+<main class="conteudo">
+
+    <section class="sobre__mim" id="sobre-mim">
         <img class="foto__sobre_mim" src="./assets/lud_e_meg.jpg" width="20%" height="20%">
         <div class="sobre__mim_texto">
             <h1 class="apresentacao__subtitulo">Sobre mim</h1>
@@ -63,11 +88,11 @@
             <p>Estou sempre em busca do meu autodesenvolvimento e quero me tornar uma pessoa melhor a cada dia.</p>
             <p>Desejo que meu trabalho contribua para o desenvolvimento da humanidade e para a conservação da natureza.</p>
         </div>
-    </session>
+    </section>
     
-    <session class="item__menu" id="educacao">
+    <section class="item__menu" id="educacao">
         <h1 class="apresentacao__subtitulo">Educação</h1>
-        <session class="boxes">
+        <section class="boxes">
             <div class="coluna">
                 <div class="box__amarelo">
                     <h5>Cursos livres</h5>
@@ -94,12 +119,12 @@
                 </div>
             </div>
             
-        </session>
-    </session>
+        </section>
+    </section>
 
-    <session class="item__menu" id="experiencias">
+    <section class="item__menu" id="experiencias">
         <h1 class="apresentacao__subtitulo">Experiências</h1>
-        <session class="boxes">
+        <section class="boxes">
             <div class="coluna">
                 <div class="box__verde">
                     <h5>Autônoma</h5>
@@ -121,10 +146,10 @@
                     <p>Ledora e transcritora de provas em concursos, atendendo pessoas com deficiências e disfuncionalidades (2021 - presente).</p>
                 </div>
             </div>
-        </session>
-    </session>
+        </section>
+    </section>
 
-    <session class="item__menu" id="habilidades">
+    <section class="item__menu" id="habilidades">
         <h1 class="apresentacao__subtitulo">Habilidades</h1>
         <div class="boxes">
             <div class="coluna">
@@ -141,9 +166,9 @@
                 <p class="texto">Criação de páginas lindas como esta usando HTML5, CSS e JavaScript.</p>
             </div>
         </div>   
-    </session>
+    </section>
 
-    <session class="item__menu" id="interesses">
+    <section class="item__menu" id="interesses">
         <h1 class="apresentacao__subtitulo">Interesses</h1>
             <div class="container__icones">
                 <img id="plantas" src="./assets/plants.png">
@@ -151,12 +176,11 @@
                 <img id="costura" src="./assets/costura.png">
                 <img id="livros" src="./assets/livros.png">
             </div>
-    </session>
+    </section>
 
 </main>
     <footer class="rodape">
-        <p>Fale comigo através do <a class="link__escuro" href="mailto:ludmila.silva.resende@gmail.com">e-mail</a> ou do <a
-                class="link__escuro"
+        <p>Fale comigo através do <a href="mailto:ludmila.silva.resende@gmail.com">e-mail</a> ou do <a
                 href="https://api.whatsapp.com/send?phone=5562984877109&text=Ol%C3%A1!%20Tudo%20bem?%20Qual%20seu%20nome?">WhatsApp</a>.
         </p>
         <br><br>
