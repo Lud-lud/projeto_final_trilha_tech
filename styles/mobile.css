@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (min-width: 480px ) and (max-width: 1200px)  {
     .menu {
         padding: 1.5rem 4rem;
     }
@@ -34,7 +34,10 @@
 
     .boxes {
         flex-direction: column;
+        align-items: center;
     }
+
+
 
 
     body {
@@ -68,6 +71,10 @@
 
     .sobre-mim {
         flex-direction: column-reverse;
+    }
+
+    .item-menu-habilidades {
+        flex-direction: column;
     }
 
 }

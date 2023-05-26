@@ -128,14 +128,13 @@ body {
     display: flex;
     align-items: center;
     padding: 10%;
-    gap: 1.5rem;
+    gap: 4rem;
 }
 
 .sobre-mim-texto {
     /* padding: 5% 10% 5% 10%; */
     display: flex;
     flex-direction: column;
-    font-weight: 300;
 }
 
 .subtitulo {
@@ -144,53 +143,57 @@ body {
 
 .foto-sobre-mim {
     border: 0.5rem solid var(--cor-quaternaria);
-    width: 100%;
+    width: 30%;
 }
-
-
-.link__escuro {
-    color: var(--cor-secundaria);
-}
-
-.link__claro {
-    color: var(--cor-primaria)
-}
-
 
 
 .boxes {
     display: flex;
+    flex-direction: column;
     gap: 1.5rem;
     justify-content: center;
 }
 
-.coluna {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
 
 .box-amarelo {
     background-color: var(--cor-quintenaria);
-    width: fit-content;
+    width: calc(100vw - 16rem);
     height: fit-content;
     border-radius: 10px;
     padding: 10px;
     color: var(--cor-secundaria);
 }
 
+.box-amarelo a {
+    color: var(--cor-secundaria);
+}
+
 .box-verde {
     background-color: var(--cor-quaternaria);
-    width: fit-content;
+    width: calc(100vw - 16rem);
     height: fit-content;
     border-radius: 10px;
     padding: 10px;
     color: var(--cor-primaria);
 }
 
-.texto {
+.box-verde a {
+    color: var(--cor-primaria)
+}
+
+.item-menu-habilidades {
+    display: flex;
+    gap: 3rem;
+}
+
+.logo-texto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-texto p {
     text-align: center;
-    width: 550px;
 }
 
 
