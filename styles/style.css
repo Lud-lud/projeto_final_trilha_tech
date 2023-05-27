@@ -16,8 +16,6 @@
     padding: 0;
 }
 
-
-
 body {
     background-color: var(--cor-terciaria);
     color: var(--cor-secundaria);
@@ -28,43 +26,36 @@ body {
     height: 100vh;
 }
 
-.cabecalho {
+#header {
     position: fixed;
     right: 0%;
     left: 0%;
     background-color: var(--cor-terciaria);
-    box-shadow: 0px 3px 10px var(--cor-secundaria);
 }
 
-.menu ul {
+#menu {
     display: flex;
     justify-content: center;
     gap: 5rem;
     list-style: none;
+    padding: .5rem;
 }
 
+#btn-mobile {
+    display: none;
+}
 
-.menu a {
-    display: block;
-    padding: 1rem;
+#menu a {
     border-radius: 0.5rem;
     text-decoration: none;
     color: var(--cor-secundaria)
 }
 
-.menu-mobile-icon {
-   display: none;
-}
-
-.menu-mobile {
-    display: none;
-}
-
-.menu a:hover {
+#menu a:hover {
     background: var(--cor-quaternaria);
-    color: var(--cor-quintenaria)
+    color: var(--cor-quintenaria);
+    box-shadow: 3px 5px 10px var(--cor-quaternaria);
 }
-
 
 .home {
     background-color: var(--cor-terciaria);
@@ -84,8 +75,6 @@ body {
     flex-direction: column;
     gap: 2rem;
 }
-
-
 
 .icones-texto {
     display: flex;
@@ -119,7 +108,7 @@ body {
 .item-menu {
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 3%;
     gap: 20px;
     background-color: var(--cor-primaria);
 }
@@ -146,14 +135,13 @@ body {
     width: 30%;
 }
 
-
 .boxes {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     justify-content: center;
+    padding: 0 4rem;
 }
-
 
 .box-amarelo {
     background-color: var(--cor-quintenaria);
@@ -184,6 +172,7 @@ body {
 .item-menu-habilidades {
     display: flex;
     gap: 3rem;
+    padding: 0 4rem;
 }
 
 .logo-texto {

@@ -1,78 +1,68 @@
 @media (min-width: 480px ) and (max-width: 1200px)  {
-    .menu {
-        padding: 1.5rem 4rem;
+    #header {
+        display: flex;
+        justify-content: flex-end;
     }
-
-    .menu-mobile-icon button {
+    #nav {
+        display: flex;
+        align-items: center;
+    }
+    #btn-mobile {
+        margin-left: auto;
+    }
+    #menu {
+        display: none;
+    }
+    #nav.active #menu {
+        display: block;
+        position: absolute;
+        width: max-content;
+        top: 50px;
+        right: 0px;
+        background-color: var(--cor-terciaria);
+        display: block;
+        z-index: 1000;
+        border-bottom-left-radius: .5rem;
+    }
+    #menu li {
+        padding: 1rem;
+        text-align: center;
+        font-weight: 500;
+    }
+    #btn-mobile {
+        display: flex;
         background-color: transparent;
         border: none;
-        cursor: pointer;
+        padding-right: .5rem;
     }
-
-    .menu-mobile ul {
-        text-align: center;
-    }
-
-    .menu-mobile a {
-        text-decoration: none;
-        color: #4C4B16;
-    }
-
-    .menu-mobile a:hover {
-        background: var(--cor-quaternaria);
-        color: var(--cor-quintenaria)
-    }
-
-    .menu-mobile .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-
-    .open {
-        display: block;
-    }
-
     .boxes {
         flex-direction: column;
         align-items: center;
     }
-
-
-
-
     body {
         font-size: 16px;
-        
     }
-
     .home {
         flex-direction: column-reverse;
     }
-
     .home h1 {
         font-size: 36px;
     }
-
     .imagens {
         align-items: center;
     }
-
     .cabecalho {
         display: none;
     }
-
     .informacoes-home {
         text-align: center;
     }
-
     .contato {
         text-align: start;
     }
-
     .sobre-mim {
         flex-direction: column-reverse;
     }
-
     .item-menu-habilidades {
         flex-direction: column;
     }

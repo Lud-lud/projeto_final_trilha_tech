@@ -12,32 +12,18 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="menu">
-            <ul>
-                <li><a href="#sobre-mim">sobre mim</a></li>
-                <li><a href="#educacao">educação</a></li>
-                <li><a href="#experiencias">experiências</a></li>
-                <li><a href="#habilidades">habilidades</a></li>
-                <li><a href="#interesses">interesses</a></li>
-             </ul>
-
-        <div class="menu-mobile-icon">
-            <button onclick="menuShow()"><img class="icon" src="./assets/icons8-cardápio.svg" alt="abre menu mobile">
-            </button>
-        </div>
-          
-         </nav>
-
-        <div class="menu-mobile">
-            <ul>
-                    <li class="nav-item"><a href="#sobre-mim">sobre mim</a></li>
-                    <li class="nav-item"><a href="#educacao">educação</a></li>
-                    <li class="nav-item"><a href="#experiencias">experiências</a></li>
-                    <li class="nav-item"><a href="#habilidades">habilidades</a></li>
-                    <li class="nav-item"><a href="#interesses">interesses</a></li>
-        </div>
-    </header>
+    <header id="header">
+        <nav id="nav">
+          <button id="btn-mobile"><img class="icon" src="./assets/icons8-cardápio.svg" alt=""></button>
+          <ul id="menu">
+            <li><a href="#sobre-mim">sobre mim</a></li>
+            <li><a href="#educacao">educação</a></li>
+            <li><a href="#experiencias">experiências</a></li>
+            <li><a href="#habilidades">habilidades</a></li>
+            <li><a href="#interesses">interesses</a></li>
+          </ul>
+        </nav>
+      </header>
 
     <section class="home">
 
@@ -161,7 +147,7 @@
         <h1 class="subtitulo">Habilidades</h1>
 
             <div class="item-menu-habilidades">
-                
+
                 <div class="logo-texto">
                     <div class="container-icones">
                         <img src="./assets/R_logo.svg.png" width="100px">
@@ -197,6 +183,8 @@
         <p>Ludmila Silva Resende</p>
         <p>2023</p>
     </footer>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
