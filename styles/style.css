@@ -100,6 +100,16 @@ body {
     align-items: center;
 }
 
+.icones-interesses {
+    width: 8rem;
+    transition: 0.7s transform;
+}
+
+.icones-interesses:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 .conteudo {
     display: flex;
     flex-direction: column;
@@ -108,7 +118,7 @@ body {
 .item-menu {
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: 6%;
     gap: 20px;
     background-color: var(--cor-primaria);
 }
@@ -116,12 +126,10 @@ body {
 .sobre-mim {
     display: flex;
     align-items: center;
-    padding: 10%;
     gap: 4rem;
 }
 
 .sobre-mim-texto {
-    /* padding: 5% 10% 5% 10%; */
     display: flex;
     flex-direction: column;
 }
@@ -145,10 +153,10 @@ body {
 
 .box-amarelo {
     background-color: var(--cor-quintenaria);
-    width: calc(100vw - 16rem);
+    width: 60rem;
     height: fit-content;
     border-radius: 10px;
-    padding: 10px;
+    padding: 1.5rem;
     color: var(--cor-secundaria);
 }
 
@@ -158,10 +166,10 @@ body {
 
 .box-verde {
     background-color: var(--cor-quaternaria);
-    width: calc(100vw - 16rem);
+    width: 60rem;
     height: fit-content;
     border-radius: 10px;
-    padding: 10px;
+    padding: 1.5rem;
     color: var(--cor-primaria);
 }
 
