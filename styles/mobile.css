@@ -70,5 +70,8 @@
     .item-menu-habilidades {
         flex-direction: column;
     }
+    .icones-interesses {
+        width: 6rem;
+    }
 
 }

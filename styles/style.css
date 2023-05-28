@@ -153,7 +153,6 @@ body {
 
 .box-amarelo {
     background-color: var(--cor-quintenaria);
-    width: 60rem;
     height: fit-content;
     border-radius: 10px;
     padding: 1.5rem;
@@ -166,7 +165,6 @@ body {
 
 .box-verde {
     background-color: var(--cor-quaternaria);
-    width: 60rem;
     height: fit-content;
     border-radius: 10px;
     padding: 1.5rem;
@@ -193,4 +191,23 @@ body {
     text-align: center;
 }
 
+.display-informacoes-interesses {
+    display: none;
+}
+
+.background-texto {
+    font-size: 16px;
+    font-weight: 500;
+    width: 20rem;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: var(--cor-quintenaria);
+    padding: 1rem;
+}
+
+#icones-balao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
