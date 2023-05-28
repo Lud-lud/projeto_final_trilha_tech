@@ -43,6 +43,7 @@
     }
     .home {
         flex-direction: column-reverse;
+        padding: 15%;
     }
     .home h1 {
         font-size: 36px;
