@@ -67,5 +67,7 @@
     .icones-interesses {
         width: 6rem;
     }
-
+    .rodape {
+        font-size: 14px;
+    }
 }
